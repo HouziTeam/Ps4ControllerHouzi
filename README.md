@@ -1,12 +1,11 @@
 # PS4-esp32
-Use a PS4 controller with an ESP32
+Usa un mando de PS4 con un ESP32
 
-This is heavily based on the work of Jeffery Pernis to connect a PS3 controller to an ESP32.
-You can find that here: https://github.com/jvpernis/esp32-ps3
+Este proyecto se basa en gran medida en el trabajo de Jeffery Pernis para conectar un mando de PS3 a un ESP32. Puedes encontrarlo aquí: https://github.com/jvpernis/esp32-ps3
 
-[Here's a video](https://youtu.be/BmlKBs27pgE) about how this library was made.
+Aquí tienes un vídeo sobre cómo se creó esta librería.
 
-This repo can be downloaded as a zip file and imported into the Arduino IDE as a library.
+Puedes descargar este repositorio como un archivo ZIP e importarlo al IDE de Arduino como una librería.
 
 ## Installation
 The instructions on how to do this are base off what can be found [here](https://github.com/jvpernis/esp32-ps3/issues/3#issuecomment-517141523)
