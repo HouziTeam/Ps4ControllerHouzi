@@ -22,14 +22,15 @@ The instructions on how to do this are base off what can be found [here](https:/
     1. Select "Download Zip" (It's always a good idea to look through the code on this page first to make sure you know what you're downloading)
     1. In the Arduino IDE, navigate to `Sketch -> Include Library -> Add .ZIP Library`, then select the file you just downloaded 
 
-## Pairing the PS4 Controller:
-When a PS4 controller is 'paired' to a PS4 console, it just means that it has stored the console's Bluetooth MAC address, which is the only device the controller will connect to. Usually, this pairing happens when you connect the controller to the PS4 console using a USB cable, and press the PS button. This initiates writing the console's MAC address to the controller.
+## Emparejamiento del mando de PS4:
 
-Therefore, if you want to connect your PS4 controller to the ESP32, you either need to figure out what the Bluetooth MAC address of your PS4 console is and set the ESP32's address to it, or change the MAC address stored in the PS4 controller.
+Cuando un mando de PS4 se "empareja" con una consola PS4, significa que ha almacenado la dirección MAC Bluetooth de la consola, que es el único dispositivo al que se conectará el mando. Normalmente, este emparejamiento se produce al conectar el mando a la consola PS4 mediante un cable USB y pulsar el botón PS. Esto inicia la escritura de la dirección MAC de la consola en el mando.
 
-Whichever path you choose, you might want a tool to read and/or write the currently paired MAC address from the PS4 controller. You can try using [sixaxispairer](https://github.com/user-none/sixaxispairer) for this purpose.
+Por lo tanto, si quieres conectar tu mando de PS4 al ESP32, necesitas averiguar cuál es la dirección MAC Bluetooth de tu consola PS4 y configurar la dirección del ESP32 con ella, o bien cambiar la dirección MAC almacenada en el mando de PS4.
 
-If you opted to change the ESP32's MAC address, you'll need to include the ip address in the ```PS4.begin()``` function during within the ```setup()``` Arduino function like below where ```1a:2b:3c:01:01:01``` is the MAC address (**note that MAC address must be unicast**):
+Sea cual sea el método que elijas, es posible que necesites una herramienta para leer y/o escribir la dirección MAC actualmente emparejada del mando de PS4. Puedes probar sixaxispairer para este propósito.
+
+Si optaste por cambiar la dirección MAC del ESP32, deberás incluir la dirección IP en la función PS4.begin() dentro de la función setup() de Arduino como se muestra a continuación, donde 1a:2b:3c:01:01:01 es la dirección MAC (ten en cuenta que la dirección MAC debe ser unicast):
 ```
 void setup()
 {
