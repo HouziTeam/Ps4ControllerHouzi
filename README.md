@@ -22,14 +22,14 @@ Las instrucciones sobre cómo hacer esto se basan en lo que se puede encontrar [
 
     D. Busca `esp32` (probablemente la última de la lista) y haz clic en `Instalar` (la versión             1.0.3 funciona mejor)
 
-    E. Selecciona la placa ESP32 que tienes con `Herramientas -> Placa: "xxx"` en la sección `ESP32         Arduino`
+    E. Selecciona la placa ESP32 que tienes con `Herramientas -> Placa: "xxx"` en la sección `ESP32`
 2. Para instalar esta biblioteca en tu IDE de Arduino:
 
     A. Haz clic en el botón "Código" en la esquina superior derecha de esta página.
 
     B. Selecciona "Descargar ZIP" (siempre es recomendable revisar el código de esta página primero         para asegurarte de saber qué estás descargando).
 
-    C. En el IDE de Arduino, ve a `Sketch -> Incluir biblioteca -> Agregar biblioteca .ZIP` y               selecciona el archivo que acabas de descargar.
+    C. En el IDE de Arduino, ve a `Programa -> Incluir biblioteca -> Agregar biblioteca .ZIP` y               selecciona el archivo que acabas de descargar.
 
 ## Emparejamiento del mando de PS4:
 
